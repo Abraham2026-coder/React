@@ -1,0 +1,43 @@
+body {
+  font-family: system-ui, sans-serif;
+  background: #f5f7fb;
+}
+
+.friends {
+  display: flex;
+  gap: 16px;
+  padding: 20px;
+}
+
+.friend {
+  background: white;
+  padding: 16px 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  width: 180px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.friend:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+}
+
+.friend h2 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.status {
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+}
+
+.status.online {
+  color: #22c55e; /* green */
+}
+
+.status.offline {
+  color: #ef4444; /* red */
+}

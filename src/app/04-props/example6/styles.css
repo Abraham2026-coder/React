@@ -1,0 +1,26 @@
+.app {
+  padding: 40px;
+}
+
+h1 {
+  margin-bottom: 24px;
+}
+
+/* Layout container */
+.two-column {
+  display: flex;
+  gap: 20px;
+  color: black;
+  margin-bottom: 24px;
+}
+
+/* Each child column */
+.two-column > * {
+  flex: 1;
+  width: 0;
+  background: white;
+
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+}

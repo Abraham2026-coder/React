@@ -1,0 +1,46 @@
+.search-result {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  padding: 12px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.sponsored-badge {
+  font-size: 11px;
+  color: #5f6368;
+  border: 1px solid #5f6368;
+  padding: 1px 5px;
+  border-radius: 3px;
+}
+
+.source {
+  font-size: 13px;
+  color: #202124;
+  margin: 6px 0 2px;
+}
+
+.title {
+  display: block;
+  font-size: 18px;
+  color: #1a0dab;
+  text-decoration: none;
+  margin-bottom: 4px;
+}
+
+.title:hover {
+  text-decoration: underline;
+}
+
+.snippet {
+  font-size: 14px;
+  color: #4d5156;
+  margin: 0 0 6px;
+  line-height: 1.5;
+}
+
+.meta {
+  font-size: 13px;
+  color: #70757a;
+  display: flex;
+  gap: 6px;
+}

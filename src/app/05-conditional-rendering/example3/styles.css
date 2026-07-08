@@ -1,0 +1,85 @@
+body {
+  font-family: system-ui, sans-serif;
+  background: #f6f8fb;
+  color: #1f2937;
+}
+
+/* Container */
+.shopping-cart {
+  max-width: 480px;
+  margin: 60px auto;
+  padding: 20px 22px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  width: 600px;
+}
+
+/* Title */
+.shopping-cart h2 {
+  margin: 0 0 18px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Items wrapper */
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Item card */
+.cart-item {
+  background: #f9fafb;
+  padding: 14px 16px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+/* Subtle hover */
+.cart-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+}
+
+/* Name */
+.cart-item h3 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* Price */
+.price {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+}
+
+/* Availability badge */
+.stock-status {
+  font-size: 12px;
+  font-weight: 500;
+  color: #16a34a;
+  background: #ecfdf5;
+  padding: 4px 8px;
+  border-radius: 999px;
+  width: fit-content;
+}
+
+/* Total */
+.total {
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid #e5e7eb;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+}

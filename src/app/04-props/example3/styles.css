@@ -1,0 +1,56 @@
+
+.app {
+  padding: 40px;
+}
+
+h1 {
+  margin-bottom: 24px;
+}
+
+.content {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+/* Badge wrapper */
+.badge {
+  position: relative;
+  display: inline-block;
+}
+
+/* The floating count */
+.badge-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+
+  background: crimson;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+
+  padding: 4px 8px;
+  border-radius: 999px;
+
+  min-width: 20px;
+  text-align: center;
+}
+
+/* Just to make children look nicer */
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #222;
+  color: white;
+  cursor: pointer;
+}
+
+p,
+div {
+  margin: 0;
+  padding: 8px 4px;
+  border-radius: 6px;
+  /* border: 1px solid #ddd; */
+}
