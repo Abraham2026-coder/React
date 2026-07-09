@@ -42,8 +42,9 @@ export default function Home() {
       <li>
         <a href="05-conditional-rendering/example4">Conditional Rendering 4 - Shopping Cart </a>
       </li>
-
-
+      <li>
+        <a href="05-conditional-rendering/example5">Conditional Rendering 5 - BuyTickets </a>
+      </li>
     </ul>
   );
 }
