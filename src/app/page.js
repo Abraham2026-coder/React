@@ -48,6 +48,9 @@ export default function Home() {
       <li>
         <a href="05-conditional-rendering/example6">Conditional Rendering 6 - Credit Card Users</a>
       </li>
+      <li>
+        <a href="05-conditional-rendering/example7">Conditional Rendering 7 - Credit Card Users-2</a>
+      </li>
     </ul>
   );
 }

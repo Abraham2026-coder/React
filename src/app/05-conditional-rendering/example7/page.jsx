@@ -1,4 +1,4 @@
-
+import "./styles.css";
 /*
 // Stretch goal from previous exercise
 <div class="container">
@@ -31,3 +31,47 @@
   </div>
 </div>
 */
+
+function CreditCardUsers({ name, plan, credit }) {
+
+  let planClassName = plan;
+  if (plan === "Visitor Plan") {
+    planClassName = "visitor";
+  } else if (plan === "Pro Plan") {
+    planClassName = "pro";
+  } else if (plan=== "enterprise"){
+    planClassName = "enterprise";
+  }
+
+
+  const showMessage = plan === "Visitor Plan";
+  const showButton = credit > 0 &&  <button className="use-btn">Use Credit</button> ;
+  const showWarning = credit < 4  && credit > 0 &&<button className="use-btn">Use Credit</button>;
+  const showEnterprise = plan ==="enterprise" && <button class="manage-btn">Manage Team</button>;
+  
+  return (
+    <div className={`card ${planClassName}`}>   
+      <h2>{name}</h2>
+      <p className="plan">{plan}</p>
+      {showMessage && <p className="message">Upgrade to unlock features</p>}
+      {showButton && <button className="use-btn">Use Credit</button>}
+      {showWarning && <p className="credits warning">Low credits</p> }
+      {showEnterprise && <p className="credits">Unlimited Access</p>}
+      
+    </div>
+  );
+}
+
+export default function () {
+  return (
+    <div className="container">
+      <CreditCardUsers name="Alice" plan="Visitor Plan" />
+      <CreditCardUsers name="Bob" plan="Pro Plan" credit={12} />
+      <CreditCardUsers name="Diana" plan="Pro Plan" credit={3} />
+      <CreditCardUsers name="Charlie" plan="enterprise"  />
+
+    </div>
+
+  );
+
+}

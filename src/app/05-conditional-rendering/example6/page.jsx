@@ -45,7 +45,7 @@ Expected Output:
     <p class="plan">Pro Plan</p>
   </div>
 */
-function CreditCardUsers({ name, plan, credit, btnLabel, warning }) {
+function CreditCardUsers({ name, plan, credit }) {
   const planClassName = plan === "Visitor Plan" ? "visitor" : "pro";
   const showMessage = plan === "Visitor Plan";
   const showButton = credit > 0 &&  <button className="use-btn">Use Credit</button> ;
