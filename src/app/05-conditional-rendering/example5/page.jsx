@@ -7,6 +7,7 @@ Expected Output:
 
   <h1 class="heading">Upcoming Courses</h1> not repeating
 
+  //First <Tickets /> start
   <div class="card">
     <h2>React Basics</h2>
     <p class="seats">
@@ -16,7 +17,9 @@ Expected Output:
 
     <button class="enroll-btn">Enroll Now</button> <!-- Only shows when seatsLeft is greater than 0 -->
   </div>
+  //First <Tickets /> end
 
+  //Second <Tickets /> start
   <div class="card">
     <h2>Advanced CSS</h2>
     <p class="seats">
@@ -27,7 +30,9 @@ Expected Output:
     <p class="warning">Almost Full</p> <!-- Only shows when seatsLeft is between 1 and 5 -->
     <button class="enroll-btn">Enroll Now</button> <!-- Only shows when seatsLeft is greater than 0 -->
   </div>
+  //Second <Tickets /> end
 
+  //Third <Tickets /> start
   <div class="card">
     <h2>JavaScript Mastery</h2>
     <p class="seats">
@@ -35,6 +40,7 @@ Expected Output:
     </p>
     <p class="status">Sold Out</p>
   </div>
+  //Third <Tickets /> end
 
 </div>
 */
