@@ -1,0 +1,51 @@
+body {
+  font-family: system-ui, sans-serif;
+  background: #f6f8fb;
+}
+
+/* Container */
+.todo-list {
+
+  width: 420px;
+  margin: 60px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Card */
+.todo-item {
+  background: #ffffff;
+  padding: 16px 18px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  cursor: pointer;
+}
+
+/* Hover lift */
+.todo-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Title */
+.todo-item h2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #1f2937;
+  transition: color 0.2s ease;
+}
+
+/* Completed state */
+.todo-item.completed {
+  background: #f1f5f9;
+  box-shadow: none;
+}
+
+.todo-item.completed h2 {
+  color: #94a3b8;
+  text-decoration: line-through;
+}

@@ -51,6 +51,15 @@ export default function Home() {
       <li>
         <a href="05-conditional-rendering/example7">Conditional Rendering 7 - Credit Card Users-2</a>
       </li>
+      <li>
+        <a href="06-rendering-lists/01-just-strings">Rendering Lists - List of strings</a>
+      </li>
+      <li>
+        <a href="06-rendering-lists/02-objects">Rendering Lists - Objects 1</a>
+      </li>
+       <li>
+        <a href="06-rendering-lists/03-objects-2">Rendering Lists - Objects 2</a>
+      </li>
     </ul>
   );
 }
