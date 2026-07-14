@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  gap: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.friends {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 200px;
+  border-radius: 6px;
+}
+
+.friend {
+  border-bottom: 1px solid #eee;
+  padding: 8px 0;
+}
+
+.friend:last-child {
+  border-bottom: none;
+}
+
+h2 {
+  font-size: 16px;
+  margin: 0 0 5px;
+}
+
+.status {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.status.online {
+  color: green;
+}
+
+.status.offline {
+  color: gray;
+}
