@@ -46,7 +46,7 @@ import "./styles.css";
 // leftHeading, leftText, rightHeading, rightText
 function TwoColumn({ children }) {
   return (
-    <div class="two-column">
+    <div className="two-column">
       {/* Whatever comes here keeps changing */}
       {children}
     </div>

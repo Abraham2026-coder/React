@@ -57,10 +57,20 @@ export default function Home() {
       <li>
         <a href="06-rendering-lists/02-objects">Rendering Lists - Objects 1</a>
       </li>
-       <li>
+      <li>
         <a href="06-rendering-lists/03-objects-2">Rendering Lists - Objects 2</a>
       </li>
+      <li>
+        <a href="06-rendering-lists/04-filter-objects">Rendering Lists - Friends</a>
+      </li>
+      <li>
+        <a href="06-rendering-lists/05-nested-objects">Rendering Lists - Courses</a>
+      </li>
+      <li>
+        <a href="07-event-handling/example1">Event Handling - Example 1</a>
+      </li>
     </ul>
+
   );
 }
 

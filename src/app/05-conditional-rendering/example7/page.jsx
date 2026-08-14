@@ -4,29 +4,29 @@ import "./styles.css";
 <div class="container">
 
   <div class="card visitor">
-    <h2>Alice</h2>  --->repeating
-    <p class="plan">Visitor Plan</p>
+    <h2>Alice</h2>  --->repeating{name}
+    <p class="plan">Visitor Plan</p>{plan}
     <p class="message">Upgrade to unlock features</p>
   </div>
 
   <div class="card pro"> --->repeating
-    <h2>Bob</h2>  --->repeating
-    <p class="plan">Pro Plan</p>
-    <p class="credits">12 credits remaining</p>
+    <h2>Bob</h2>  --->repeating{name}
+    <p class="plan">Pro Plan</p> {plan}
+    <p class="credits">12 credits remaining</p>{credit}
     <button class="use-btn">Use Credit</button>
   </div>
 
   <div class="card enterprise">
-    <h2>Charlie</h2>
-    <p class="plan">Enterprise Plan</p>
-    <p class="credits">Unlimited Access</p>
+    <h2>Charlie</h2>{name}
+    <p class="plan">Enterprise Plan</p>{plan}
+    <p class="credits">Unlimited Access</p> {credit}
     <button class="manage-btn">Manage Team</button>
   </div>
 
   <div class="card pro">
-    <h2>Diana</h2>
-    <p class="plan">Pro Plan</p>
-    <p class="credits warning">Low credits</p>
+    <h2>Diana</h2>{name}
+    <p class="plan">Pro Plan</p>{plan}
+    <p class="credits warning">Low credits</p>{credit}
     <button class="use-btn">Use Credit</button>
   </div>
 </div>

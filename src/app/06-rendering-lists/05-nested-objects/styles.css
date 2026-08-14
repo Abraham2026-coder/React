@@ -1,0 +1,25 @@
+.course {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+}
+
+.course h2 {
+  margin: 0 0 5px;
+}
+
+.lessons {
+  margin-top: 0px;
+  padding-left: 18px;
+  font-size: 14px;
+}
+
+h4 {
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+}

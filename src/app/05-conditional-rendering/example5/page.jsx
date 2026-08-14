@@ -21,11 +21,11 @@ Expected Output:
 
   //Second <Tickets /> start
   <div class="card">
-    <h2>Advanced CSS</h2>
+    <h2>Advanced CSS</h2> {title}
     <p class="seats">
-      4 seats left
+      4 seats left {seatsLeft}
     </p>
-    <p class="status">Open for Enrollment</p>
+    <p class="status">Open for Enrollment</p>{status}
 
     <p class="warning">Almost Full</p> <!-- Only shows when seatsLeft is between 1 and 5 -->
     <button class="enroll-btn">Enroll Now</button> <!-- Only shows when seatsLeft is greater than 0 -->
@@ -34,11 +34,11 @@ Expected Output:
 
   //Third <Tickets /> start
   <div class="card">
-    <h2>JavaScript Mastery</h2>
+    <h2>JavaScript Mastery</h2>{title}
     <p class="seats">
-      0 seats left
+      0 seats left  {seatsLeft}
     </p>
-    <p class="status">Sold Out</p>
+    <p class="status">Sold Out</p>{status}
   </div>
   //Third <Tickets /> end
 

@@ -9,9 +9,9 @@ import "./styles.css";
   <div class="cart-items"> not repeating
 
     <div class="cart-item">   repeating
-      <h3>Chocolate Bar</h3>  repeating
-      <div class="price">$5</div> repeating
-      <div class="in-stock">In stock</div> repeating
+      <h3>Chocolate Bar</h3>  repeating {title}
+      <div class="price">$5</div> repeating{price}
+      <div class="in-stock">In stock</div> repeating{stock}
 
       <div class="bulk-stock">+20 Available</div>  <!-- if stock > 20 -->
     </div>

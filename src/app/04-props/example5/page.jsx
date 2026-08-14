@@ -45,7 +45,7 @@ export default function App() {
     <div className='app'>
       <h1>Tooltip Example</h1>
       <div className="toolbar">
-
+    {/* <Toolbar image="💾" text="Save changes" /> */}
         <ToolButton image="💾">Save changes</ToolButton>
         <ToolButton image="🗑">Save changes</ToolButton>
         <ToolButton image="✏️">Edit item</ToolButton>
@@ -59,4 +59,6 @@ export default function App() {
 }
 /*
 <button>Click Me</button>
+<img src="" alt=""/>
+<p>lorem ipsum</p>
 */

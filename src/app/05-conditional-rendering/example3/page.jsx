@@ -8,19 +8,19 @@ import "./styles.css";
 
    <div class="cart-items">
     <div class="cart-item">
-        <h3>Chocolate Bar</h3>
-        <div class="price">$5.00</div>
-        <div>+20 Available</div>
+        <h3>Chocolate Bar</h3>{title}
+        <div class="price">$5.00</div>{price}
+        <div>+20 Available</div> {plus20}
     </div>
 
     <div class="cart-item">
-      <h3>Tissue Roll</h3>
-      <div class="price">$2.00</div>
+      <h3>Tissue Roll</h3> {title}
+      <div class="price">$2.00</div>{price}
     </div>
 
     <div class="cart-item">
-      <h3>Goggles</h3>
-      <div class="price">$15.00</div>
+      <h3>Goggles</h3>{title}
+      <div class="price">$15.00</div>{price}
     </div>
 
   </div>
