@@ -69,6 +69,9 @@ export default function Home() {
       <li>
         <a href="07-event-handling/example1">Event Handling - Example 1</a>
       </li>
+      <li>
+        <a href="07-event-handling/example2">Event Handling - Example 2</a>
+      </li>
     </ul>
 
   );
