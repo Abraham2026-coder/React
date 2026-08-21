@@ -32,45 +32,34 @@ then only run the action (and show its alert) if the user clicks "OK".
 If the user clicks "Cancel" on the confirm dialog, nothing should happen (no alert).
 */
 
+function ConfirmButton({ label, message, alertMessage }) {
+  return <button onClick={() => {
+    const userConfirmed = window.confirm(message);
+    if (userConfirmed) {
+      alert(alertMessage);
+    }
+  }
+  } className="button">{label}</button>
+}
+
 export default function DangerZone() {
   return (
     <React.Fragment>
       <div className="container">
         <h2 className="title">Danger Zone</h2>
         <div className="buttonGroup">
+          {/* <button className="button">Delete Account</button>
+          <button className="button">Reset Settings</button>
+          <button className="button">Log Out</button> */}
 
-          <button className="button" 
-          onClick={()=>{
-            const userConfirmed = window.confirm(
-              "Are you sure you want to delete your account?");
-            if (userConfirmed) {
-              alert("Account deleted");
-              
-            }  
-          }}>Delete Account</button>
-
-          <button className="button"
-          onClick={()=> {
-            const userConfirmed = window.confirm("This will reset all your settings. Continue?");
-            if (userConfirmed) {
-              alert("Settings reset!")
-            }
-          }}>Reset Settings</button>
-
-          <button className="button"
-          onClick={()=>{
-            const userConfirmed = window.confirm("Are you sure you want to log out?");
-            if (userConfirmed) {
-              alert("Logged out!")
-              
-            }
-          }}>Log Out</button>
-          
+          <ConfirmButton label="Delete Account" message="Are you sure you want to delete your account?" alertMessage="Account deleted!"></ConfirmButton>
+          <ConfirmButton label="Reset Settings" message="This will reset all your settings. Continue?" alertMessage="Settings reset!"></ConfirmButton>
+          <ConfirmButton label="Log Out" message="Are you sure you want to log out?" alertMessage="Logged out!"></ConfirmButton>
         </div>
       </div>
 
-    </React.Fragment>
-    
+    </React.Fragment >
+
   );
- 
+
 }

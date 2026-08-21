@@ -32,45 +32,28 @@ then only run the action (and show its alert) if the user clicks "OK".
 If the user clicks "Cancel" on the confirm dialog, nothing should happen (no alert).
 */
 
+function ConfirmButton({ label, onClick }) {
+  return <button onClick={onClick} className="button">{label}</button>
+}
+
 export default function DangerZone() {
   return (
     <React.Fragment>
       <div className="container">
         <h2 className="title">Danger Zone</h2>
         <div className="buttonGroup">
+          {/* <button className="button">Delete Account</button>
+          <button className="button">Reset Settings</button>
+          <button className="button">Log Out</button> */}
 
-          <button className="button" 
-          onClick={()=>{
-            const userConfirmed = window.confirm(
-              "Are you sure you want to delete your account?");
-            if (userConfirmed) {
-              alert("Account deleted");
-              
-            }  
-          }}>Delete Account</button>
-
-          <button className="button"
-          onClick={()=> {
-            const userConfirmed = window.confirm("This will reset all your settings. Continue?");
-            if (userConfirmed) {
-              alert("Settings reset!")
-            }
-          }}>Reset Settings</button>
-
-          <button className="button"
-          onClick={()=>{
-            const userConfirmed = window.confirm("Are you sure you want to log out?");
-            if (userConfirmed) {
-              alert("Logged out!")
-              
-            }
-          }}>Log Out</button>
-          
-        </div>
+          <ConfirmButton label="Delete Account" onClick={() => window.alert("Are you sure you want to delete your account?")}></ConfirmButton>
+        <ConfirmButton label="Reset Settings" onClick={() => window.alert("This will reset all your settings. Continue?")}></ConfirmButton>
+        <ConfirmButton label="Log Out" onClick={() => window.alert("Are you sure you want to log out?")}></ConfirmButton>
       </div>
+    </div>
 
-    </React.Fragment>
-    
+    </React.Fragment >
+
   );
- 
+
 }

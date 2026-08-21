@@ -70,8 +70,15 @@ export default function Home() {
         <a href="07-event-handling/example1">Event Handling - Example 1</a>
       </li>
       <li>
-        <a href="07-event-handling/example2">Event Handling - Example 2</a>
+        <a href="07-event-handling/example2">Event Handling - Example 2 (No child component) </a>
       </li>
+      < li>
+        <a href="07-event-handling/example3">Event Handling - Example 3 (string duplication removed with a child component)</a>
+      </li>
+       < li>
+        <a href="07-event-handling/example4">Event Handling - Example 4 (function duplication removed)</a>
+      </li>
+
     </ul>
 
   );
