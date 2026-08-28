@@ -78,6 +78,9 @@ export default function Home() {
        < li>
         <a href="07-event-handling/example4">Event Handling - Example 4 (function duplication removed)</a>
       </li>
+      < li>
+        <a href="07-event-handling/example5">Event Handling - Example 5 (color )</a>
+      </li>
 
     </ul>
 

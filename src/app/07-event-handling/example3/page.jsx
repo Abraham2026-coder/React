@@ -46,7 +46,7 @@ export default function DangerZone() {
           <button className="button">Reset Settings</button>
           <button className="button">Log Out</button> */}
 
-          <ConfirmButton label="Delete Account" onClick={() => window.alert("Are you sure you want to delete your account?")}></ConfirmButton>
+        <ConfirmButton label="Delete Account" onClick={() => window.alert("Are you sure you want to delete your account?")}></ConfirmButton>
         <ConfirmButton label="Reset Settings" onClick={() => window.alert("This will reset all your settings. Continue?")}></ConfirmButton>
         <ConfirmButton label="Log Out" onClick={() => window.alert("Are you sure you want to log out?")}></ConfirmButton>
       </div>
