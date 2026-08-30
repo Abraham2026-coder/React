@@ -4,7 +4,8 @@ import "./styles.css";
 import React from "react";
 
 
-// By default, all components are server components and they don't support client functionalities like button clicks
+// By default, all components are server components and they don't support
+//  client functionalities like button clicks
 
 function AlertButton({ text, message }) {
     return (
@@ -22,7 +23,6 @@ export default function Homepage() {
         <div>
             {/* JSX Syntax */}
             <AlertButton text="Play" message={"Playing"} />
-
             {/* Function invocation behind JSX */}
             {createElementOutput}
         </div>
