@@ -96,6 +96,19 @@ export default function Home() {
            < li>
             <a href="08-state/05-hello">State - 05-hello </a>
           </li>
+          < li>
+            <a href="08-state/06-hello">State - 06-hello </a>
+          </li>
+          < li>
+            <a href="08-state/06b-hello">State - 06b-hello </a>
+          </li>
+           < li>
+            <a href="08-state/06c-hello">State - 06c-hello </a>
+          </li>
+            < li>
+            <a href="08-state/06d-hello">State - 06d-hello </a>
+          </li>
+
         </ul>
 
       </section>
