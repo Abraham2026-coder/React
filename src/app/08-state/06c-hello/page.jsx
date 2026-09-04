@@ -1,6 +1,8 @@
 "use client";
 import { useState } from "react";
 
+// This example doesn't follow single source of truth principle, that's why we use derived properties
+
 export default function Home(){
 
     let [isUpperCase,setIsUpperCase]= useState(false);

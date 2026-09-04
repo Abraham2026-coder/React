@@ -35,6 +35,9 @@ export default function Home() {
             <a href="04-props/example6">Props Example 6 - children prop</a>
           </li>
           <li>
+            <a href="04-props/summery-props">summery-props</a>
+          </li>
+          <li>
             <a href="05-conditional-rendering/example1">Conditional Rendering 1 - Friends List</a>
           </li>
           <li>
@@ -91,9 +94,12 @@ export default function Home() {
         <h1>State</h1>
         <ul>
           < li>
+            <a href="08-state/01-two-way-binding">Two way binding</a>
+          </li>
+          < li>
             <a href="08-state/example1">State - Example 1 (color box)</a>
           </li>
-           < li>
+          < li>
             <a href="08-state/05-hello">State - 05-hello </a>
           </li>
           < li>
@@ -102,10 +108,10 @@ export default function Home() {
           < li>
             <a href="08-state/06b-hello">State - 06b-hello </a>
           </li>
-           < li>
+          < li>
             <a href="08-state/06c-hello">State - 06c-hello </a>
           </li>
-            < li>
+          < li>
             <a href="08-state/06d-hello">State - 06d-hello </a>
           </li>
 
