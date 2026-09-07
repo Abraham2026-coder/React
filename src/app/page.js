@@ -97,6 +97,9 @@ export default function Home() {
             <a href="08-state/01-two-way-binding">Two way binding</a>
           </li>
           < li>
+            <a href="08-state/01-2-way-binding-ex1">Two way binding-colorBox</a>
+          </li>
+          < li>
             <a href="08-state/example1">State - Example 1 (color box)</a>
           </li>
           < li>
