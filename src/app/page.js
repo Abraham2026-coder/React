@@ -100,6 +100,19 @@ export default function Home() {
             <a href="08-state/01-2-way-binding-ex1">Two way binding-colorBox</a>
           </li>
           < li>
+            <a href="08-state/02-colored-text">Colored Text</a>
+          </li>
+          < li>
+            <a href="08-state/03-font-demo">Font Demo</a>
+          </li>
+          < li>
+            <a href="08-state/04-addRemoveBtn">addRemoveBtn</a>
+          </li>
+          < li>
+            <a href="08-state/04b-addRemoveBtn">addRemoveBtn-v2</a>
+          </li>
+
+          < li>
             <a href="08-state/example1">State - Example 1 (color box)</a>
           </li>
           < li>

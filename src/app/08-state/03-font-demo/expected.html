@@ -1,0 +1,34 @@
+<div class="container">
+  <h1 class="title">Font Style Demo</h1>
+  <div class="controls">
+    <div class="control-group">
+      <label for="text-input" class="label">Your Text</label>
+      <input
+        id="text-input"
+        placeholder="Type something..."
+        class="text-input"
+        type="text"
+        value="Hello, world!"
+      />
+    </div>
+    <div class="control-group">
+      <label for="size-input" class="label">Font Size — 24px</label>
+      <input
+        id="size-input"
+        min="12"
+        max="48"
+        class="range-input"
+        type="range"
+        value="24"
+      />
+    </div>
+    <div class="control-group">
+      <span class="label">Bold</span><button class="toggle-btn">Off</button>
+    </div>
+  </div>
+  <div className="display-box">
+    <p className="display-text" style="font-size: 24px; font-weight: 400">
+      Hello, world!
+    </p>
+  </div>
+</div>

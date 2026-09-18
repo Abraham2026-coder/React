@@ -17,11 +17,11 @@ function Box() {
         <div onClick={changeColor} className="box" style={{ backgroundColor: boxColor }}></div>
     );
 }
-
+const NUM_BOXES = 5;
 export default function ColorBox() {
 
     return (
-        <div>
+        <div className="container">
             <Box />
             <Box />
             <Box />
