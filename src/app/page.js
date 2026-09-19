@@ -130,6 +130,9 @@ export default function Home() {
           < li>
             <a href="08-state/06d-hello">State - 06d-hello </a>
           </li>
+          < li>
+            <a href="08-state/08-boxes-and-circles">State - Boxes and Circles</a>
+          </li>
 
         </ul>
 
