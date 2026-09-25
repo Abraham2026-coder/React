@@ -37,6 +37,9 @@ export default function Home() {
           <li>
             <a href="04-props/summery-props">summery-props</a>
           </li>
+           <li>
+            <a href="04-props/summery-props2">summery-props2</a>
+          </li>
           <li>
             <a href="05-conditional-rendering/example1">Conditional Rendering 1 - Friends List</a>
           </li>
