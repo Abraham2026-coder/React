@@ -1,0 +1,55 @@
+<div className="container">
+  <h1 className="title">Immutable State Demo</h1>
+  <div className="controls">
+    <div className="control-row">
+      <div className="control-group">
+        <span className="label">Size</span>
+        <div className="button-row">
+          <button className="action-btn">—+ Smaller</button>
+          <button className="action-btn">+ Larger</button>
+        </div>
+      </div>
+      <div className="control-group">
+        <span className="label">Shape</span>
+        <button className="action-btn">Toggle Round</button>
+      </div>
+    </div>
+    <div className="control-group">
+      <span className="label">Color</span>
+      <div className="button-row">
+        <button
+          className="swatch-btn"
+          style=background-color:#3b82f6 
+          aria-label="Set color #3b82f6"
+          />
+        <button
+          className="swatch-btn"
+          style= background-color:#22c55e
+          aria-label="Set color #22c55e"
+        />
+        <button
+          className="swatch-btn"
+          style= background-color:#ef4444
+          aria-label="Set color #ef4444"
+        />
+        <button
+          className="swatch-btn"
+          style= background-color:#a855f7     
+          aria-label="Set color #a855f7"
+        />
+      </div>
+    </div>
+  </div>
+  <div className="display-box">
+    <div
+      className="shape"
+      style={{
+        width: 120,
+        height: 120,
+        background-color: #3b82f6,
+        border-radius: 8px,
+        
+      }}
+    />
+  </div>
+</div>

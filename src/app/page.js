@@ -7,6 +7,12 @@ export default function Home() {
     <div>
 
       <section>
+        <h1>Games</h1>
+        <ul>
+          <li>
+            <a href="09-tic-tac-toe">Tic Tac Toe</a>
+          </li>
+        </ul>
         <h1>Foundations</h1>
         <ul>
           {/* href must match one of the file paths under app directory (App router) */}
@@ -37,7 +43,7 @@ export default function Home() {
           <li>
             <a href="04-props/summery-props">summery-props</a>
           </li>
-           <li>
+          <li>
             <a href="04-props/summery-props2">summery-props2</a>
           </li>
           <li>
@@ -135,6 +141,21 @@ export default function Home() {
           </li>
           < li>
             <a href="08-state/08-boxes-and-circles">State - Boxes and Circles</a>
+          </li>
+          < li>
+            <a href="08-state/09-object">State - Object</a>
+          </li>
+          < li>
+            <a href="08-state/09-object2">State - object2-color-box</a>
+          </li>
+          < li>
+            <a href="08-state/09-object3">State - object3-color-box</a>
+          </li>
+          < li>
+            <a href="08-state/09-object4">State - object4-color-box</a>
+          </li>
+          < li>
+            <a href="08-state/09-object5">State - object5-color-box</a>
           </li>
 
         </ul>

@@ -23,18 +23,18 @@ const JOBS = [
    )
 }*/
 
-function Job({ jobTitle, company, location, remote, urgent, Apply }) {
+function Job({ jobTitle, company, location, remote, urgent }) {
   return (
     <li className="job-card">
       <div className="job-info">
         <p className="job-title">
-          {jobTitle}{urgent === true && <span className="urgent-tag">"Urgent"</span>}
+          {jobTitle}{urgent === true && <span className="urgent-tag">Urgent</span>}
         </p>
         <p className="job-company">{company}</p>
         {remote === false && <span className="location-badge">{location}</span> }
         {remote === true && <span className="location-badge remote">{location}</span>}
       </div>
-      <button onClick={() => window.alert(`You have applied for the job as ${jobTitle} at ${company}`)} className="apply-btn">{Apply}</button>
+      <button onClick={() => window.alert(`You have applied for the job as ${jobTitle} at ${company}`)} className="apply-btn">Apply</button>
     </li>
   );
 }
@@ -53,7 +53,7 @@ export default function JobBoardDemo() {
               location={item.location}
               remote={item.remote}
               urgent={item.urgent}
-              Apply={"Apply"}
+            
             />)
           }
         </ul>
