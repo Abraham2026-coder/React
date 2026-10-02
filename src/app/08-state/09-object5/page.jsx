@@ -2,6 +2,7 @@
 import { useState } from "react";
 import "./styles.css";
 import { initScriptLoader } from "next/script";
+import { Elsie } from "next/font/google";
 
 
 export default function ObjectState() {
@@ -25,6 +26,7 @@ export default function ObjectState() {
         // Final structure we need
         color: "#3b82f6",
         isRound: true,
+        radius: 8
     })
     function changeColorToBlue() {
         const toBlue = {
@@ -52,9 +54,10 @@ export default function ObjectState() {
     }
     function toggleRound() {
         const newBoxProperties = {
-            isRound: !boxProperties.isRound
+            if(isRound) {
+                boxProperties.radius = 50
+            } 
         }
-        setBoxProperties(newBoxProperties);
     }
 
     function incrementSize() {
