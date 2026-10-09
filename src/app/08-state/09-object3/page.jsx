@@ -28,17 +28,21 @@ export default function ObjectState() {
         isRound: true
     })
 
-    function Colors({newColor}) {
-        <button 
+    function Colors({ newColor }) {
+        return (<button
             className="swatch-btn"
-            style={{ backgroundColor: boxProperties.color }}
-            aria-label={`Set color ${boxProperties.color}`}
-            onClick={()=>setBoxProperties(newColor)}
-        />
+            style={{ backgroundColor: newColor }}
+            aria-label={`Set color ${newColor}`}
+            onClick={() => setBoxProperties({
+                ...boxProperties,
+                color: newColor
+            })}
+        />)
     }
 
     function incrementSize() {
         const newBoxProperties = {
+            ...boxProperties,
             size: boxProperties.size + 20
         }
 
@@ -47,6 +51,7 @@ export default function ObjectState() {
 
     function decrementSize() {
         const newBoxProperties = {
+            ...boxProperties,
             size: boxProperties.size - 20
         }
 
@@ -72,10 +77,10 @@ export default function ObjectState() {
                 <div className="control-group">
                     <span className="label">Color</span>
                     <div className="button-row">
-                        <Colors newColor={"#3b82f6"} />
-                        <Colors newColor={"#22c55e"} />
-                        <Colors newColor={"#ef4444"} />
-                        <Colors newColor={"#a855f7"} />
+                        <Colors newColor="#3b82f6" />
+                        <Colors newColor="#22c55e" />
+                        <Colors newColor="#ef4444" />
+                        <Colors newColor="#a855f7" />
                     </div>
                 </div>
             </div>

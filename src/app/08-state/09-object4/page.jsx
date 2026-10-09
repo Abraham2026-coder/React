@@ -62,24 +62,24 @@ export default function ObjectState() {
                 <div className="control-group">
                     <span className="label">Color</span>
                     <div className="button-row">
-                        <button onClick={setBoxProperties("#3b82f6")}
+                        <button onClick={() => setBoxProperties("#3b82f6")}
                             className="swatch-btn"
-                            style={{ backgroundColor: boxProperties.color }}
+                            style={{ backgroundColor: "#3b82f6" }}
                             aria-label="Set color #3b82f6"
                         />
-                        <button onClick={setBoxProperties("#22c55e")}
+                        <button onClick={() => setBoxProperties("#22c55e")}
                             className="swatch-btn"
-                            style={{ backgroundColor: boxProperties.color }}
+                            style={{ backgroundColor: "#22c55e"}}
                             aria-label="Set color #22c55e"
                         />
-                        <button onClick={setBoxProperties("#ef4444")}
+                        <button onClick={() => setBoxProperties("#ef4444")}
                             className="swatch-btn"
-                            style={{ backgroundColor: boxProperties.color }}
+                            style={{ backgroundColor: "#ef4444" }}
                             aria-label="Set color #ef4444"
                         />
-                        <button onClick={setBoxProperties("#a855f7")}
+                        <button onClick={() => setBoxProperties("#a855f7")}
                             className="swatch-btn"
-                            style={{ backgroundColor: boxProperties.color }}
+                            style={{ backgroundColor: "#a855f7" }}
                             aria-label="Set color #a855f7"
                         />
                     </div>

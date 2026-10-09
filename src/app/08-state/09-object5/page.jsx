@@ -26,43 +26,69 @@ export default function ObjectState() {
         // Final structure we need
         color: "#3b82f6",
         isRound: true,
-        radius: 8
     })
+
+    /*
+    Initial:
+    {
+        size: 100,
+        color: "#3b82f6",
+        isRound: true,
+        radius: 8
+    }
+
+    After clicking Increment (expected):
+    {
+        size: 120,
+        color: "#3b82f6",
+        isRound: true,
+        radius: 8
+    }
+    After clicking Increment (actual):
+    {
+        size: 120,
+    }
+    */
     function changeColorToBlue() {
         const toBlue = {
+            ...boxProperties,
             color: "#3b82f6",
         }
         setBoxProperties(toBlue);
     }
     function changeColorToGreen() {
         const toGreen = {
+            ...boxProperties,
             color: "#22c55e",
         }
         setBoxProperties(toGreen);
     }
     function changeColorToRed() {
         const toRed = {
+            ...boxProperties,
             color: "#ef4444",
         }
         setBoxProperties(toRed);
     }
     function changeColorToPurple() {
         const toPurple = {
+            ...boxProperties,
             color: "#a855f7",
         }
         setBoxProperties(toPurple);
     }
     function toggleRound() {
         const newBoxProperties = {
-            if(isRound) {
-                boxProperties.radius = 50
-            } 
+            ...boxProperties,
+            isRound: !boxProperties.isRound
         }
+        setBoxProperties(newBoxProperties);
     }
 
     function incrementSize() {
         const newBoxProperties = {
-            size: boxProperties.size + 20
+            ...boxProperties, // Copy existing values
+            size: boxProperties.size + 20 // Overwrite size
         }
 
         setBoxProperties(newBoxProperties)
@@ -70,11 +96,14 @@ export default function ObjectState() {
 
     function decrementSize() {
         const newBoxProperties = {
+            ...boxProperties,
             size: boxProperties.size - 20
         }
 
         setBoxProperties(newBoxProperties)
     }
+
+    console.log(boxProperties);
     return (
         <div className="container">
             <h1 className="title">Immutable State Demo</h1>
@@ -125,7 +154,7 @@ export default function ObjectState() {
                         width: boxProperties.size,
                         height: boxProperties.size,
                         backgroundColor: boxProperties.color,
-                        borderRadius: "8px", // change between 8px and 50%
+                        borderRadius: boxProperties.isRound ? "50%" : "8px", // change between 8px and 50%
                     }}
                 />
             </div>

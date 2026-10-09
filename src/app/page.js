@@ -157,6 +157,9 @@ export default function Home() {
           < li>
             <a href="08-state/09-object5">State - object5-color-box</a>
           </li>
+          < li>
+            <a href="08-state/10-objects-02">State - Card-Badge color-box</a>
+          </li>
 
         </ul>
 
