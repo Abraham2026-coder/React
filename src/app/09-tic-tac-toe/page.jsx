@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import "./styles.css";
-import { Elsie } from "next/font/google";
+import { Elsie, Festive } from "next/font/google";
 import getWinner from "./getWinner";
 
 /*
@@ -19,6 +19,7 @@ export default function TicTacToe() {
     ])
     const [currentPlayer, setCurrentPlayer] = useState("A");
     const [winner, setWinner] = useState(null);
+    const [playAgain, setPlayAgain] = useState(false);
 
 
 
@@ -81,11 +82,60 @@ export default function TicTacToe() {
 
         }
     }
-    console.log({ board, winner })
+    function TheWinner(){
+        if (winner === "Player A") {
+            return (
+                <div>
+                    <span>GAME OVER: The winner is player A</span>
+                    <button onClick={handlePlayAgain}>New Game ?</button>
+                     
+
+                </div>
+            )
+        } else if (winner === "Player B") {
+            return (
+                <div>
+                    <span>GAME OVER:The winner is player B</span>
+                     <button onClick={handlePlayAgain}>New Game ?</button>
+                </div>
+            )
+        } else if (winner === "draw") {
+            return (
+                <div>
+                    <span>GAME OVER:Draw There is no winner</span>
+                     <button onClick={handlePlayAgain}>New Game ?</button>
+                </div>
+            )
+            
+        }
+
+    }
+    function handlePlayAgain() {
+        const answer = window.confirm("Are you sure you want to play again?");
+        if (answer) {
+            setBoard([
+            ["black", "black", "black"],
+            ["black", "black", "black"],
+            ["black", "black", "black"]
+        ]);
+        setCurrentPlayer("A");
+        setWinner(null);
+
+        } else if (answer === false) {
+            console.log("User canceled the action.");
+            window.close();
+        }
+        
+    }
+
+    console.log( { board, winner })
     return (
         <>
             <div>
                 <p>Current player is : {currentPlayer}</p>
+            </div>
+            <div>
+                <TheWinner />
             </div>
             <div className="parent">
                 {cells}
