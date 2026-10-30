@@ -82,13 +82,13 @@ export default function TicTacToe() {
 
         }
     }
-    function TheWinner(){
+    function TheWinner() {
         if (winner === "Player A") {
             return (
                 <div>
                     <span>GAME OVER: The winner is player A</span>
                     <button onClick={handlePlayAgain}>New Game ?</button>
-                     
+
 
                 </div>
             )
@@ -96,39 +96,31 @@ export default function TicTacToe() {
             return (
                 <div>
                     <span>GAME OVER:The winner is player B</span>
-                     <button onClick={handlePlayAgain}>New Game ?</button>
+                    <button onClick={handlePlayAgain}>New Game ?</button>
                 </div>
             )
         } else if (winner === "draw") {
             return (
                 <div>
                     <span>GAME OVER:Draw There is no winner</span>
-                     <button onClick={handlePlayAgain}>New Game ?</button>
+                    <button onClick={handlePlayAgain}>New Game ?</button>
                 </div>
             )
-            
+
         }
 
     }
     function handlePlayAgain() {
-        const answer = window.confirm("Are you sure you want to play again?");
-        if (answer) {
-            setBoard([
+        setBoard([
             ["black", "black", "black"],
             ["black", "black", "black"],
             ["black", "black", "black"]
         ]);
         setCurrentPlayer("A");
         setWinner(null);
-
-        } else if (answer === false) {
-            console.log("User canceled the action.");
-            window.close();
-        }
-        
     }
 
-    console.log( { board, winner })
+    console.log({ board, winner })
     return (
         <>
             <div>
@@ -137,7 +129,7 @@ export default function TicTacToe() {
             <div>
                 <TheWinner />
             </div>
-            <div className="parent">
+            <div className="parent" style={{ opacity: winner === null ? 1 : 0.5 }}>
                 {cells}
             </div>
         </>

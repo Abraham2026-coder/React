@@ -12,6 +12,9 @@ export default function Home() {
           <li>
             <a href="09-tic-tac-toe">Tic Tac Toe</a>
           </li>
+          <li>
+            <a href="10-tic-tac-toe-multi">Tic Tac Toe (Multiplayer)</a>
+          </li>
         </ul>
         <h1>Foundations</h1>
         <ul>
@@ -162,6 +165,25 @@ export default function Home() {
           </li>
 
         </ul>
+
+        <h1>Side Effects</h1>
+        <ul>
+          <li>
+            <a href="11-side-effect/01-intro">Side Effect - Intro</a>
+          </li>
+
+          <li>
+            <a href="11-side-effect/02-the-problem">Side Effect - Problem without Cleanup</a>
+          </li>
+          <li>
+            <a href="11-side-effect/03-clean-up">Side Effect - With Cleanup</a>
+          </li>
+          <li>
+            <a href="11-side-effect/04-assignment-rocket">Side Effect - rocket</a>
+          </li>
+
+        </ul>
+
 
       </section>
     </div>

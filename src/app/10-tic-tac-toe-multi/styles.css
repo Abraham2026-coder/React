@@ -1,0 +1,13 @@
+.parent {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    gap: 4px;
+    justify-content: center;
+    margin: 0;
+}
+
+.cell {
+    border-radius: 4px;
+    margin: 0;
+}
