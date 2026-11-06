@@ -181,6 +181,12 @@ export default function Home() {
           <li>
             <a href="11-side-effect/04-assignment-rocket">Side Effect - rocket</a>
           </li>
+           <li>
+            <a href="11-side-effect/05-dependency">Side Effect - rocket with speed</a>
+          </li>
+          <li>
+            <a href="11-side-effect/06-assignment-breathing">Side Effect - breathing in -out</a>
+          </li>
 
         </ul>
 

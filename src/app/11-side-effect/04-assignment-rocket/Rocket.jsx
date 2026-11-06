@@ -4,21 +4,26 @@ import { useEffect, useState } from 'react';
 
 export default function Rocket() {
   const [altitude, setAltitude] = useState(0);
-  const [seconds, setSeconds] = useState(0);
-  useEffect(()=>{
-    console.log("rocket 23 has launched");
-  },[])
-   // runs just once
+
   useEffect(() => {
-    const Interval = setInterval(() => {
-      console.log("Rocket is climbing");
-      setAltitude(altitude + 100);
+    console.log("run only once");
+  }, [])
+  // runs just once
+  useEffect(() => {
+    const IntervalID = setInterval(() => {
+      console.log("Rocket is climbing: " + IntervalID);
+
+      // In the callback version, React will provide the updated state value
+      setAltitude(altitude => altitude + 100);
     }, 1000) // runs every 1000 ms.
+
+    // React will run the below function when component is removed
     return () => {
-      clearInterval(altitude, seconds); // clearing or resetting al
+      clearInterval(IntervalID); // clearing or resetting al
+      console.log("Rocket has landed: " + IntervalID);
     }
-  }, [seconds, altitude]); // depended on seconds and altitude
-   console.log("the rocket has landed");
+  }, []); // if dependency array is empty, then the effect function (the outer function runs only once)
+
 
 
 

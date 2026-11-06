@@ -14,6 +14,7 @@ export default function Timer() {
 
         console.log(`Interval ${intervalId} started`);
 
+        // React will run this function when component is removed
         return () => {
             console.log("Cleaning up...")
             clearInterval(intervalId);
