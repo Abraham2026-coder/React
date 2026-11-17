@@ -187,6 +187,9 @@ export default function Home() {
           <li>
             <a href="11-side-effect/06-assignment-breathing">Side Effect - breathing in -out</a>
           </li>
+          <li>
+            <a href="11-side-effect/07-supabase-messages">Side Effect - message from supabase</a>
+          </li>
 
         </ul>
 

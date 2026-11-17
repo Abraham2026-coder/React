@@ -7,16 +7,38 @@ import { useEffect, useState } from 'react';
 //   2. What happens after you switch back and forth 3 times?
 //   3. Why does this happen?
 
+/*
+
+function printUpperCase(payload){
+    const textTouppercase = payload.payload.message;
+    console.log("Received: ", textTouppercase.toLocaleUpperCase());
+}
+
+messagesChannel.on("broadcast", {event:"uppercase"}, printUpperCase);
+
+messagesChannel.subscribe((status, error) => {
+    if (error) {
+        console.log(error);
+        process.exit(0);
+    }
+    if (status === "SUBSCRIBED") {
+        console.log("Listening on channel 'messages'... 👂");
+    }
+})
+
+supabase.removeChannel(messagesChannel);
+*/
 export default function Breathing() {
   const [phase, setPhase] = useState('in');
 
   useEffect(() => {
     const intervalId = setInterval(() => {
+      // Long running processes
       console.log(`Interval ${intervalId} switching phase`);
       setPhase((p) => (p === 'in' ? 'out' : 'in'));
     }, 3000);
     return () => {
-    console.log(`Interval ${intervalId} started`);
+      console.log(`Interval ${intervalId} started`);
       clearInterval(intervalId);
     }
   }, []);
