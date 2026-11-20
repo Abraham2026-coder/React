@@ -190,6 +190,9 @@ export default function Home() {
           <li>
             <a href="11-side-effect/07-supabase-messages">Side Effect - message from supabase</a>
           </li>
+          <li>
+            <a href="11-side-effect/08-supabase-messages">Side Effect - notification from supabase</a>
+          </li>
 
         </ul>
 
